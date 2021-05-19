@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Real-Time Water Qualtiy Monitoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="Paani.css">
+</head>
+
+<body >
+<div class="header1">
+	<h1 align="center" style="color:#f7f6e7">Water Quality Monitoring</h1>
+</div>
+
+<div class="grid-container">
+  <header class="header">
+  </header>
+  <aside class="sidenav">
+    <aside class="sidenav">
+
+  <ul class="sidenav__list">
+    <li style="padding: 20px 20px 20px 40px;color: #99bbad;"><strong align="center">NAVIGATION</strong></li>
+    <li class="sidenav__list-item "><a target="_self" href="paani2.html">Readings</a></li>
+    <li class="sidenav__list-item"><a target="_self" href="PaaniGraphs.html">Graphs</a></li>
+    <li class="sidenav__list-item"><a target="_self" href="PaaniContact.html">Contact</a></li>
+  </ul>
+
+</aside>
+  </aside>
+
+  <main class="main" align="center">
+    <br>
+    
+	<h1> Readings</h1>
+    <form align="center">&nbsp;&nbsp;&nbsp;&nbsp;
+      Temperture: &nbsp; <textarea disabled>36</textarea>
+      <br>
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;
+      Humidity: &nbsp;&nbsp;&nbsp; <textarea disabled>40%</textarea>
+    </form>
+  </main>
+  <footer class="footer" align="left" ></footer>
+</div>
+<header class="header" style="color:#d3e0dc">
+  <div class="header__search">Water</div>
+</header>
+
+<footer class="footer" style="color:#d3e0dc">
+  <div class="footer__copyright">&copy; Team DAS</div>
+  <div class="footer__signature">Made with love by genius</div>
+</footer>
+<script>
+var myBlurFunction = function(state) {
+    /* state can be 1 or 0 */
+    var containerElement = document.getElementById('main_container');
+    var overlayEle = document.getElementById('overlay');
+
+    if (state) {
+        overlayEle.style.display = 'block';
+        containerElement.setAttribute('class', 'blur');
+    } else {
+        overlayEle.style.display = 'none';
+        containerElement.setAttribute('class', null);
+    }
+};
+</script>
+</body>
+
+</html>
